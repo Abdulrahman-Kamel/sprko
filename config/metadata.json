@@ -1,0 +1,39 @@
+{
+	"aws":{
+		"protocol":["http", "ftp", "graphql"],
+		"internal":["169.254.169.254", "127.0.0.1", "localhost", "External But Refere to internal"],
+		"metadata":{"latest/meta-data/public-keys/0/openssh-key":"key=aw32#!@#rsadas", "path2":"mathch2"}
+	},
+	"azure":{
+		"protocol":["http", "ftp", "graphql"],
+		"internal":["169.254.169.254", "127.0.0.1", "localhost", "External But Refere to internal"],
+		"metadata":{"metadata/instance?api-version=2017-04-02":"match1", "metadata/instance/network/interface/0/ipv4/ipAddress/0/publicIpAddress?api-version=2017-04-02&format=text":"mathch2"},
+		"header":{"Metadata":"true"}
+	},
+	"google":{
+		"protocol":["http", "ftp", "graphql"],
+		"internal":["169.254.169.254", "metadata.google.internal", "127.0.0.1", "localhost", "External But Refere to internal"],
+		"metadata":{"computeMetadata/v1/instance/disks/?recursive=true":"allow_recursive_pulls", "computeMetadata/v1/instance/id":"mathch2", "computeMetadata/v1/project/project-id":"match3"},
+		"header":{"X--Metadata-Request":"True"}
+	},
+	"digital_osean":{
+		"protocol":["http", "ftp", "graphql"],
+		"internal":["169.254.169.254", "127.0.0.1", "localhost", "External But Refere to internal"],
+		"metadata":{"metadata/v1.json":"match1", "path2":"mathch2"}
+	},
+	"packet_cloud":{
+		"protocol":["http", "ftp", "graphql"],
+		"internal":["169.254.169.254", "127.0.0.1", "localhost", "External But Refere to internal"],
+		"metadata":{"metadata/v1/id":"match1", "metadata/v1/id":"mathch2", "metadata/v1/interfaces/public/0/ipv6/address":"match3", "metadata/v1/user-data":"match4"}
+	},
+	"oracle_cloud":{
+		"protocol":["http", "ftp", "graphql"],
+		"internal":["169.254.169.254", "127.0.0.1", "localhost", "External But Refere to internal"],
+		"metadata":{"opc/v1/instance/":"match1", "path2":"mathch2"}
+	},
+	"alibaba_cloud":{
+		"protocol":["http", "ftp", "graphql"],
+		"internal":["100.100.100.200", "127.0.0.1", "localhost", "External But Refere to internal"],
+		"metadata":{"latest/meta-data/":"match1", "path2":"mathch2", "blabla/path":"b/l/a/blamatch"}
+	}
+}

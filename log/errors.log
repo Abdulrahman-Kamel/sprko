@@ -1,0 +1,7 @@
+error responseVerify.py: http://localhost/param.php?name=dekart&age=212&fetch=[SSRF]: HTTPConnectionPool(host='localhost', port=80): Read timed out. (read timeout=10)
+error responseVerify.py: http://localhost/param.php?name=dekart&age=212&fetch=[SSRF]: HTTPConnectionPool(host='localhost', port=80): Read timed out. (read timeout=10)
+error responseVerify.py: http://localhost/param.php?name=dekart&age=212&fetch=[SSRF]: HTTPConnectionPool(host='localhost', port=80): Read timed out. (read timeout=10)
+error responseVerify.py: http://localhost/param.php?name=dekart&age=212&fetch=[SSRF]: HTTPConnectionPool(host='localhost', port=80): Read timed out. (read timeout=10)
+error responseVerify.py: http://localhost/param.php?name=dekart&age=212&fetch=[SSRF]: HTTPConnectionPool(host='localhost', port=80): Read timed out. (read timeout=10)
+error responseVerify.py: http://localhost/param.php?name=dekart&age=212&fetch=[SSRF]: HTTPConnectionPool(host='localhost', port=80): Read timed out. (read timeout=10)
+error responseVerify.py: http://localhost/param.php?name=dekart&age=212&fetch=[SSRF]: HTTPConnectionPool(host='localhost', port=80): Read timed out. (read timeout=10)

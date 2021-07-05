@@ -1,0 +1,9 @@
+
+telegram:
+  enable: False
+  bot_api: "changeMe"
+  chat_id: "-changeMe"
+
+slack:
+  enable: False
+  secret: "changeMe"
