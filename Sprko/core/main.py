@@ -58,7 +58,7 @@ class ssrf():
 				return ssrfURL
 		
 		except Exception as e:
-			print("error main.py: [1] \t", e)
+			# print("error main.py: [1] \t", e)
 			of = open("log/errors.log", "a+")
 			wf = of.writelines(url+": "+str(e)+"\n")
 			cf = of.close()
