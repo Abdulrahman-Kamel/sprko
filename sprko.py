@@ -6,7 +6,7 @@ from Sprko.ui import arguments, console
 from Sprko.core import verify, threads
 from Sprko.core.main import ssrf as main
 from Sprko.core.exploit import responseVerify as exploit
-# from modules import readData, sender
+from modules import readData, sender
 
 # Auto install require packages
 install.packages()
