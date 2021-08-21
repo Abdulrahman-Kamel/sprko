@@ -18,4 +18,4 @@ class get():
 				ssrfURL = url.replace("collobrator","[SSRF]")
 				return ssrfURL
 		except Exception as e:
-			print('error: ',e)	
+			pass#print('error: ',e)	
