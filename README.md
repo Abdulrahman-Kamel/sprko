@@ -6,9 +6,9 @@ Just given him urls file and the tool will send many requests to discover ssrf a
 
 # Install
 ```bash
-pip install importlib pip <br>
+pip install importlib pip
 ```
-Just install above modules and the tool will install all others modules after first runing 
+Just install above modules and the tool will install all other modules after first runing 
 
 # Usage
 python3 sprko.py --urls endpoints.txt --bar
