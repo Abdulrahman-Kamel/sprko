@@ -1,4 +1,4 @@
-# Automated SSRF Discover And Exploit And Notification [Telegram | Slack]
+## Automated SSRF Discover And Exploit | Send Notification To [Telegram | Slack]
 
 # Description
 Python tool to discover ssrf vulnerability and automated exploit to extract metadata files to get RCE <br>
