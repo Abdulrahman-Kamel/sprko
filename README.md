@@ -4,6 +4,15 @@
 Python tool to discover ssrf vulnerability and automated exploit to extract metadata files to get RCE <br>
 Just given him urls file and the tool will send many requests to discover ssrf and then alert you, if discover ssrf will make automated exploit, if you do not want to exploit just take him --no-exploit argument <br>
 
+# Install
+```bash
+pip install importlib pip <br>
+```
+Just install above modules and the tool will install all others modules after first runing 
+
+# Usage
+python3 sprko.py --urls endpoints.txt --bar
+
 # Interested Notics
 - After discover ssrf the tool will try to exploit and extract metadata files , this tec will work by this file config/metadata.json
 - metadata.json: file contains on 8 cloud every cloud contain on internal ips and metadata files paths and data matches  and others required, now the tool will request this paths and match on response which found in metadata.json file, if found this matches be mtadafile file.
