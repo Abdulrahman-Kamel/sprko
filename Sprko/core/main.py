@@ -44,7 +44,7 @@ class ssrf():
 
 	def discover(self, url):
 		try:
-			url = url.replace("FUZZ007", "https://v2y8uryq3c1lcabnccvt90mct3zxnm.burpcollaborator.net")
+			url = url.replace("FUZZ007", "http://zeh3mov0ric2n9b9p4on4luwangd42.burpcollaborator.net/")
 
 			response = requests.get(url, verify=False, timeout=20, allow_redirects=False, headers=None)
 			
@@ -53,7 +53,7 @@ class ssrf():
 				print(msg.log(response.url+" "+status_code_color(response.status_code)) + length(response.content))
 
 			# check ssrf found ! , by some static burp subdomain collobrator
-			if "5kbwrxeq13zr5tzb96z54zzjmgz" in response.text:
+			if "w0d14oadc3zgs6nrb8qi38zjigz" in response.text:
 				ssrfURL = url.replace("https://v2y8uryq3c1lcabnccvt90mct3zxnm.burpcollaborator.net","[SSRF]")
 				return ssrfURL
 		
