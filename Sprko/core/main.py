@@ -3,7 +3,7 @@
 import requests
 import urllib3
 from Sprko.ui import console, arguments
-from Sprko.core import threads
+from Sprko.core import threads, get_valid_collobrator
 from modules import sender, readData
 from Sprko.core.exploit import responseVerify as exploit
 from Sprko.core.checks import userErrors
@@ -42,9 +42,9 @@ class ssrf():
 		if len(self.checks_ssrf_found) < 1:
 			print(msg.faield("No ssrf found"))
 
-	def discover(self, url):
+	def discover(self, url, collobrator_and_value):
 		try:
-			url = url.replace("FUZZ007", "http://zeh3mov0ric2n9b9p4on4luwangd42.burpcollaborator.net/")
+			url = url.replace("FUZZ007", collobrator_and_value[0])
 
 			response = requests.get(url, verify=False, timeout=20, allow_redirects=False, headers=None)
 			
@@ -53,8 +53,8 @@ class ssrf():
 				print(msg.log(response.url+" "+status_code_color(response.status_code)) + length(response.content))
 
 			# check ssrf found ! , by some static burp subdomain collobrator
-			if "w0d14oadc3zgs6nrb8qi38zjigz" in response.text:
-				ssrfURL = url.replace("https://v2y8uryq3c1lcabnccvt90mct3zxnm.burpcollaborator.net","[SSRF]")
+			if collobrator_and_value[1] in response.text:
+				ssrfURL = url.replace(collobrator_and_value[1],"[SSRF]")
 				return ssrfURL
 		
 		except Exception as e:
@@ -65,7 +65,7 @@ class ssrf():
 
 
 	def execute(self, url):
-		ssrfURL = self.discover(url)
+		ssrfURL = self.discover(url, get_valid_collobrator.as_list())
 
 		if ssrfURL is not None:
 			print(msg.medium('(Pottential SSRF) '), ssrfURL)
