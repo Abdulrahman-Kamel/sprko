@@ -15,6 +15,7 @@ class packages():
 		self.pkg('re')
 		self.pkg('colorama')
 		self.pkg('datetime')
+		self.pkg('PyYAML')
 
 	def checkPackage(self, package):
 		get_pkg_path   = importlib.util.find_spec(package)
