@@ -1,6 +1,8 @@
 ## Automated SSRF Discover And Exploit | Send Notification To [Telegram | Slack]
-Python tool to discover ssrf vulnerability and automated exploit to extract metadata files to get RCE <br>
-Just given him urls file and the tool will send many requests to discover ssrf and then alert you, if discover ssrf will run automated exploit, if you do not want to exploit just take him --no-exploit argument <br>
+Python tool to discover ssrf vulnerability and automated exploit to extract metadata files to get RCE
+Just give the urls file and the tool will send many requests to discover ssrf and then alert you,
+if discover ssrf, will run automated exploit, if you do not want to exploit, just take the --no-exploit argument 
+<br>
 
 
 ## Install
@@ -43,27 +45,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
